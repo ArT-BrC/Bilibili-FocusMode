@@ -1,0 +1,33 @@
+{
+    "manifest_version":3,
+    "name":"B站专注模式",
+    "version":"1.0",
+    "description":"隐藏B站播放页面的推荐区评论区以及广告",
+    "permissions":["storage"],
+
+    "icons": {
+        "16": "icons/icon.png",
+        "48": "icons/icon.png",
+        "128": "icons/icon.png"
+    },
+
+    "action":{
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/icon.png",
+            "48": "icons/icon.png",
+            "128": "icons/icon.png"
+        }
+    },
+
+    "content_scripts":[
+        {
+            "matches":[
+                "https://www.bilibili.com/video/*",
+                "https://www.bilibili.com/list/*"
+        ],
+            "js":["content.js"],
+            "css":["focus.css"]
+        }
+    ]
+}

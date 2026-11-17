@@ -1,0 +1,10 @@
+html.focus-mode-on .recommend-list-v1,
+html.focus-mode-on .bpx-player-ending-related,
+html.focus-mode-on #commentapp,
+html.focus-mode-on .video-resource-list,
+html.focus-mode-on .ad-report.strip-ad.left-banner,
+html.focus-mode-on .video-card-ad-small,
+html.focus-mode-on .ad-report.ad-floor-exp.right-bottom-banner,
+html.focus-mode-on #slide_ad{
+    display: none !important;
+}
